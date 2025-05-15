@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility classes */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #0a66c2;
+  --secondary-color: #00000099;
+  --button-primary-color: #0a66c2;
+  --button-secondary-color: #000000b2;
+  --other-headings-color: #b24020;
+  --grey-background-color: #eae6df79;
+  --brown-background-color: #eae6dfc5;
+  --skyblue-background-color: #f1f8fa;
+  --primary-button-hover-color: #0a66c20f;
+  --secondary-button-hover-color: #0000000a;
+  --google-button-hover-color: #0a66c2c1;
+  --getstarted-button-hover-color: #09529c;
+  --white-background-color: white;
+  --nav-and-subfooter-text-size: 0.75rem;
+  --button-text-size: 1rem;
+  --article-heading-size: 2rem;
+  --article-para-size: 1.25rem;
+  --nav-icon-size: 1.25rem;
+  --big-heading-size: 3rem;
+}
+
+.main-website-container {
+  width: 75%;
+  margin-inline: auto;
+}
+
+.primary-button {
+  border: 1px solid var(--button-primary-color);
+  border-radius: 27px;
+  padding: 15px 27px;
+  color: var(--button-primary-color);
+  font-size: var(--button-text-size);
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  background-color: var(--primary-button-hover-color);
+}
+
+.secondary-button {
+  border: 1px solid var(--button-secondary-color);
+  border-radius: 27px;
+  padding: 15px 27px;
+  color: var(--button-secondary-color);
+  font-size: var(--button-text-size);
+  font-weight: 600;
+}
+
+.secondary-button:hover {
+  background-color: var(--secondary-button-hover-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav Section */
+
+nav {
+  height: 80px;
+}
+
+nav h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+nav p {
+  font-size: var(--nav-and-subfooter-text-size);
+  color: var(--secondary-color);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.nav-container div:hover {
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#nav-icon-hover:hover {
+  color: black;
+}
+
+.app-icon {
+  border: none;
+  border-left: 1.5px solid var(--secondary-color);
+  border-right: 1.5px solid var(--secondary-color);
+  padding: 0px 10px;
+}
+
+.join-now-button {
+  border: none;
+}
+
+.nav-icons {
+  color: var(--secondary-color);
+  font-size: var(--nav-icon-size);
+}
+
+/* Hero Section */
+
+.hero-section {
+  height: 608px;
+}
+
+.hero-section .main-website-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 16px 0px;
+}
+
+.left-hero-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 30px;
+}
+
+.left-hero-section h1 {
+  color: var(--secondary-color);
+  font-size: var(--big-heading-size);
+  font-weight: 400;
+}
+
+.hero-section-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 25px;
+}
+
+.hero-section-buttons .secondary-button {
+  text-align: center;
+}
+
+.hero-section-buttons .google-button {
+  background-color: var(--button-primary-color);
+  color: var(--white-background-color);
+  border: none;
+}
+
+.hero-section-buttons .google-button:hover {
+  background-color: var(--google-button-hover-color);
+}
+
+.hero-section-image {
+  position: absolute;
+  right: 5px;
+}
+
+.policy-line {
+  font-size: var(--nav-and-subfooter-text-size);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.join-now-line {
+  font-size: var(--button-text-size);
+  text-align: center;
+  margin-top: 14px;
+}
+
+.hero-section-buttons p a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.hero-section-buttons p a:hover {
+  text-decoration: underline;
+}
+
+/* Feature Section */
+
+.feature-section .main-website-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 0px;
+  gap: 80px;
+}
+
+.left-section {
+  width: 40%;
+}
+
+.right-section {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.left-section h2 {
+  font-size: var(--article-heading-size);
+  font-weight: 300;
+}
+
+.left-section p {
+  font-size: var(--article-para-size);
+  margin-top: 20px;
+}
+
+#article-section {
+  background-color: var(--grey-background-color);
+}
+
+/* Job section */
+
+#job-section {
+  background-color: var(--white-background-color);
+}
+
+/* Job posting section */
+
+.job-posting-section {
+  background-color: var(--brown-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+  gap: 40px;
+}
+
+.job-posting-section h2 {
+  font-size: var(--article-heading-size);
+  font-weight: 400;
+  color: var(--other-headings-color);
+}
+
+#game-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Work Section */
+
+.work-section {
+  background-color: var(--grey-background-color);
+}
+
+.work-section .left-section {
+  width: 60%;
+}
+
+.work-section .right-section {
+  width: 40%;
+}
+
+.work-section .main-website-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 70px 0px;
+}
+
+.work-section h2 {
+  color: var(--other-headings-color);
+}
+
+/* Connection and skill feature section */
+
+.connection-and-skill-feature-section .main-website-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+  padding: 180px 0px;
+}
+
+.right-section h2 {
+  font-size: var(--article-heading-size);
+  font-weight: 300;
+}
+
+.connection-and-skill-feature-section .main-website-container .left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+.connection-and-skill-feature-section .main-website-container .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+.connection-and-skill-feature-section .connection-button {
+  margin-top: 25px;
+}
+
+.connection-and-skill-feature-section .skill-button {
+  margin-top: 30px;
+  border-radius: 0;
+}
+
+#skill-box {
+  border: 1px solid rgba(128, 128, 128, 0.464);
+  border-radius: 5px;
+  padding: 20px 24px;
+  color: #000000bf;
+  font-size: var(--button-text-size);
+  font-weight: 600;
+}
+
+#skill-box:hover {
+  background-color: var(--secondary-button-hover-color);
+}
+
+/* Professional Section */
+
+.professional-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.professional-section .left-section {
+  width: 50%;
+  height: 720px;
+  background-color: var(--grey-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.professional-section h2 {
+  color: var(--other-headings-color);
+}
+
+.professional-section a {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.professional-section .right-section {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.professional-section-buttons {
+  background-color: #eae6dfca;
+  padding: 20px 20px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.professional-section-buttons:hover {
+  background-color: #e2dacc;
+  cursor: pointer;
+}
+
+/* Video Section */
+
+.video-section {
+  height: 720px;
+  display: flex;
+  margin-top: 70px;
+}
+
+.video-section .left-video-section {
+  width: 35%;
+}
+
+.video-section .right-video-section {
+  width: 65%;
+  background-color: var(--skyblue-background-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.video-section .video-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  position: absolute;
+  right: 350px;
+  top: 171px;
+}
+
+.video-section .video-text-container {
+  margin-left: 230px;
+}
+
+.video-section .video-text-container h2 {
+  font-size: var(--article-heading-size);
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+.video-section .video-text-container h3 {
+  font-size: var(--article-para-size);
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+/* Get Started Section */
+
+.get-started-section {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1100px;
+  width: 100%;
+}
+
+.get-started-section .get-started-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.get-started-button {
+  border: 1px solid var(--primary-color);
+  border-radius: 24px;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: var(--button-text-size);
+  font-weight: 600;
+}
+
+.get-started-button:hover {
+  background-color: var(--getstarted-button-hover-color);
+}
+
+/* Friends Image Section */
+
+.friends-image-section .friends-image {
+  position: relative;
+}
+
+.friends-image-section .get-started-container h2 {
+  font-size: var(--big-heading-size);
+  font-weight: 500;
+}
+
+/* Footer Section */
+
+.footer-section {
+  margin-top: 7px;
+  background-color: var(--grey-background-color);
+  padding: 20px 0px;
+}
+
+.footer-section .main-website-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section .footer-left {
+  color: var(--primary-color);
+}
+
+.footer-section .right-footer-section {
+  display: flex;
+  gap: 100px;
+  margin-right: 90px;
+}
+
+.footer-section .right-footer-section h3 {
+  font-size: 1rem;
+  padding: 10px 0px;
+}
+
+.footer-section .right-footer-section a {
+  display: block;
+  color: var(--secondary-color);
+  padding: 4px 0px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.footer-section .right-footer-section a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Sub Footer Section */
+
+.sub-footer-section .main-website-container {
+  display: flex;
+  gap: 15px;
+  padding: 7px 0 20px 0;
+}
+
+.sub-footer-section p {
+  font-size: var(--nav-and-subfooter-text-size);
+  color: grey;
+}
+
+.sub-footer-section a {
+  font-size: var(--nav-and-subfooter-text-size);
+  font-weight: 550;
+  color: grey;
+}
+
+.sub-footer-section a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
